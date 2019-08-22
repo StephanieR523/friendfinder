@@ -1,4 +1,7 @@
-# friendfinder  https://git.heroku.com/friendfindersr.git    https://friendfindersr.herokuapp.com/  
+# friendfinder  
+
+![Heroku](https://friendfindersr.herokuapp.com/)  
+https://git.heroku.com/friendfindersr.git  
 
 ![Alt text](https://github.com/StephanieR523/friendfinder/blob/master/screenshot.JPG)
 
