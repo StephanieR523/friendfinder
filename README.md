@@ -1,5 +1,8 @@
-# friendfinder  https://git.heroku.com/friendfindersr.git    https://friendfindersr.herokuapp.com/  
+# Friend Finder  
 
+https://friendfindersr.herokuapp.com/
+
+![Alt text](https://github.com/StephanieR523/friendfinder/blob/master/screenshot.JPG)
 
 Friend Finder - Node and Express Servers
 Overview
