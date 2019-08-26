@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="UTF-8">
+        <title>Friend Finder</title>
+      
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <body background="friends2.JPG">
+      </head>
+
+<body>
+	<div class="container content1">
+		<h2>Who's your best Friend? </h2>
+		<p>Take this quick survey.</p>
+		<form>
+			<div class="form-group">
+				<input id="name" type="text" class="form-control" placeholder="Name (Required)">
+			</div>
+			<div class="form-group">
+				<label for="question1">1) I really like music.</label>
+				<select class="form-control" id="question1">
+					<option value="empty">Select an Option</option>
+					<option value="1">1 (Strongly Disagree)</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+					<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question2">2) I prefer to be in a relationship.</label>
+				<select class="form-control" id="question2">
+						<option value="empty">Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question3">3) I like to eat, like a lot.</label>
+				<select class="form-control" id="question3">
+						<option value="empty">Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question4">4) I would rather cook than eat.</label>
+				<select class="form-control" id="question4">
+						<option value="empty">Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question5">5) Fashion and clothes are very important to me.</label>
+				<select class="form-control" id="question5">
+						<option value="empty">Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question6">6) I make people laugh easiliy.</label>
+				<select class="form-control" id="question6">
+						<option value="empty">Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question7">7) I am a free spirit. </label>
+				<select class="form-control" id="question7">
+						<option value="empty">Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question8">8) I am "Type-A" and organized.</label>
+				<select class="form-control" id="question8">
+						<option value="empty">Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question9">9) I prefer staying in over going out.</label>
+				<select class="form-control" id="question9">
+						<option value="empty">Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+			<div class="form-group">
+				<label for="question10">10) I am the type to go for what I want.</label>
+				<select class="form-control" id="question10">
+						<option value="empty">Select an Option</option>
+						<option value="1">1 (Strongly Disagree)</option>
+						<option value="2">2</option>
+						<option value="3">3</option>
+						<option value="4">4</option>
+						<option value="5">5 (Strongly Agree)</option>
+				</select>
+			</div>
+		</form>
+		<div class="text-center">
+			<button id="submitBtn" type="submit" class="btn btn-primary btn-lg">Submit</button>
+		</div>
+
+		<!-- Modal after survey completion -->
+		<div id="bestFriendModal" class="modal fade" role="dialog">
+			<div class="modal-dialog">
+				<div class="modal-content">
+					<div class="modal-header">
+						<button type="button" class="close" data-dismiss="modal">&times;</button>
+						<h3 class="modal-title">Meet Your New Friend</h1>
+					</div>
+					<div class="modal-body">
+						<h2 id="bestFriend"></h2>
+						<img id="bestFriendPhoto" src="#">
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+<script type="text/javascript">
+	$("#submitBtn").on("click", function (event) {
+		event.preventDefault();
+		// Form validation
+		var valid = true;
+		if ($("#name").val() === "" || $("#photo").val() === "") {
+			valid = false;
+		} else if ($("#question1").val() === "empty" || $("#question2").val() === "empty" || $("#question3").val() === "empty" || $("#question4").val() === "empty" || $("#question5").val() === "empty" || $("#question6").val() === "empty" || $("#question7").val() === "empty" || $("#question8").val() === "empty" || $("#question9").val() === "empty" || $("#question10").val() === "empty") {
+			valid = false;
+		}
+		if (valid === true) {
+			var newUser = {
+				name: $("#name").val().trim(),
+				photo: $("#photo").val().trim(),
+				scores: [
+					$("#question1").val(),
+					$("#question2").val(),
+					$("#question3").val(),
+					$("#question4").val(),
+					$("#question5").val(),
+					$("#question6").val(),
+					$("#question7").val(),
+					$("#question8").val(),
+					$("#question9").val(),
+					$("#question10").val()
+				]
+			};
+			var currentURL = window.location.origin;
+			// Ajax call for receiving response after POST req
+			$.post(currentURL + "/api/friends", newUser, function (data) {
+				$("#bestFriend").text(data.name);
+				$("#bestFriendPhoto").attr("src", data.photo);
+				$("#bestFriendModal").modal("toggle");
+			});
+		} else {
+			// If a required field is missing, show alert
+			alert("Please answer all of the questions.");
+		}
+	});
+</script>
