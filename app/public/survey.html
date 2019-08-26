@@ -7,8 +7,11 @@
       
         <!-- Latest compiled and minified CSS -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <body background="friends2.JPG">
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js"
+		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>      
+      <body background="couch.jpg">
+         <link rel="stylesheet" type="text/css" href="css.css">
       </head>
 
 <body>
@@ -134,8 +137,7 @@
 			<button id="submitBtn" type="submit" class="btn btn-primary btn-lg">Submit</button>
 		</div>
 
-		<!-- Modal after survey completion -->
-		<div id="bestFriendModal" class="modal fade" role="dialog">
+		<div id="modal1" class="modal fade" role="dialog">
 			<div class="modal-dialog">
 				<div class="modal-content">
 					<div class="modal-header">
@@ -143,8 +145,8 @@
 						<h3 class="modal-title">Meet Your New Friend</h1>
 					</div>
 					<div class="modal-body">
-						<h2 id="bestFriend"></h2>
-						<img id="bestFriendPhoto" src="#">
+						<h2 id="friendAnswer"></h2>
+						<img id="friendAnswerPhoto" src="#">
 					</div>
 					
 				</div>
@@ -153,9 +155,7 @@
 	</div>
 
 
-	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
-		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	
 </body>
 
 </html>
@@ -191,9 +191,9 @@
 
 
 	$.post(currentURL + "/api/friends", newUser, function (data) {
-			$("#bestFriend").text(data.name);
-			$("#bestFriendPhoto").attr("src", data.photo);
-			$("#bestFriendModal").modal("toggle");
+			$("#friendAnswer").text(data.name);
+			$("#friendAnswerPhoto").attr("src", data.photo);
+			$("#modal1").modal("toggle");
 			});
 		} else {
 			alert("Please answer all of the questions.");

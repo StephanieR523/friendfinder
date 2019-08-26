@@ -1,0 +1,25 @@
+label {
+	margin-left: 20px;
+	padding-bottom: 10px;
+	color: rgb(250, 242, 170);
+    font-size: 20px;
+    
+}
+
+h2 {
+    margin-left: 20px;
+	padding-bottom: 10px;
+	color: rgb(251, 169, 75);
+    font-size: 35px;
+    text-align: center;
+    
+
+}
+p {
+    margin-left: 20px;
+	padding-bottom: 10px;
+	color: rgb(140, 245, 108);
+    font-size: 30px;
+    text-align: center;
+
+}
