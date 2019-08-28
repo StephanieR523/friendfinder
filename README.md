@@ -4,7 +4,7 @@ https://friendfindersr.herokuapp.com/
 
 ![Alt text](https://github.com/StephanieR523/friendfinder/blob/master/screenshot.JPG)
 
-![Alt text] (https://github.com/StephanieR523/friendfinder/blob/master/surveyscreenshot.JPG)
+![Alt text](https://github.com/StephanieR523/friendfinder/blob/master/surveyscreenshot.JPG)
 
 Friend Finder - Node and Express Servers
 Overview
